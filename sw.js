@@ -24,9 +24,9 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/2019/11/07/My-new-Post/');
-
   precacheUrls.push('/2019/11/28/vue的理解/');
+
+  precacheUrls.push('/2019/11/07/My-new-Post/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};

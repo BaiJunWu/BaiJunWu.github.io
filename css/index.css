@@ -1445,6 +1445,11 @@ td {
   cursor: zoom-out;
   will-change: transform;
 }
+.lazyload.block {
+  box-sizing: content-box;
+  min-width: 30px;
+  min-height: 30px;
+}
 .loading-bar {
   position: fixed;
   top: 0;
