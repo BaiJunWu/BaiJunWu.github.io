@@ -387,7 +387,7 @@ td {
 }
 .content-wrap {
   width: calc(100% - 310px);
-  float: left;
+  float: right;
 }
 .content {
   width: 100%;
@@ -590,7 +590,7 @@ td {
 }
 .sidebar {
   width: 280px;
-  float: right;
+  float: left;
 }
 .sidebar .hide {
   display: none;
@@ -671,7 +671,7 @@ td {
   border-radius: 50%;
 }
 .sidebar-ov-author__avatar:hover .sidebar-ov-author__avatar_img {
-  animation: avatar-true 0.8s both ease-out;
+  animation: avatar-ture 0.8s both ease-out;
 }
 .sidebar-ov-author__p {
   margin: 0.5rem 0 0;
@@ -1455,6 +1455,30 @@ td {
   box-sizing: content-box;
   cursor: zoom-out;
   will-change: transform;
+}
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+.loading-bar .progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #77b6ff;
+  box-shadow: 0 0 10px rgba(119,182,255,0.7);
+}
+.loading-bar.loading {
+  opacity: 1;
+  transition: none;
+}
+.loading-bar.loading .progress {
+  transition: width 0.4s ease;
 }
 .copy-button {
   position: absolute;
